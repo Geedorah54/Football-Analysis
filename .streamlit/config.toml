@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#00FFFF"                 # Neon blue
+backgroundColor="#0A0A0F"              # Deep dark background
+secondaryBackgroundColor="#141421"     # Panels / widgets
+textColor="#FFFFFF"                    # White text
+font="sans serif"
