@@ -69,5 +69,11 @@ st.write("""
 # Load the data
 df = pd.read_csv("weekly_prediction.csv")
 
-st.dataframe(df, use_container_width=True)
 
+st.markdown("""
+<div class="neon-card">
+    <div class="neon-title">Weekly Predictions</div>
+</div>
+""", unsafe_allow_html=True)
+
+st.dataframe(df, use_container_width=True)
