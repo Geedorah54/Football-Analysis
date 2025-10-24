@@ -116,6 +116,20 @@ st.markdown("""
             color: #AAAAAA;
             font-size: 14px;
         }
+            
+        /* Responsive table width */
+        [data-testid="stDataFrame"], [data-testid="stTable"] {
+            max-width: 95vw !important;
+            margin: auto;
+            border: 1px solid #00FFFF !important;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00FFFF33;
+        }
+            
+        [data-testid="stTable"] {
+            width: 100% !important;
+            table-layout: fixed !important;
+        }    
     </style>
 """, unsafe_allow_html=True)
 
