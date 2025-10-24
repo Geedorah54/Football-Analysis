@@ -37,7 +37,7 @@ st.markdown("""
         }
 
         /* Headers and Titles */
-        h1, h2, h3, [data-testid="stMarkdownContainer"] h1 {
+        h1, h2, h3, p, [data-testid="stMarkdownContainer"] h1 {
             color: #00FFFF !important;
             text-shadow: 0 0 15px #00FFFF;
             animation: glow 2s ease-in-out infinite alternate;
