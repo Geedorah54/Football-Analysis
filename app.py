@@ -86,15 +86,17 @@ st.markdown("""
             background-color: #141421;
             border: 2px solid #00FFFF;
             border-radius: 15px;
-            padding: 20px;
-            margin: 20px 0px;
+            padding: 20px 30px;
+            margin: 20px auto;
             box-shadow: 0 0 20px #00FFFF55;
             transition: 0.3s ease-in-out;
             text-align: center;
             display: flex;
             flex-direction: column;  
             align-items: center;         
-            justify-content: center;     
+            justify-content: center;
+            max-width: 500px;
+            width: fit-content;     
         }
 
         .neon-card:hover {
@@ -154,7 +156,7 @@ st.markdown("""
 # Neon data card example
 st.markdown("""
 <div class="neon-card">
-    <div class="neon-title">Previous Weekly Summary</div>
+    <div class="neon-title">Previous Weekly</div>
     <div class="neon-value">13 / 15 Correct</div>
 </div>
 """, unsafe_allow_html=True)
