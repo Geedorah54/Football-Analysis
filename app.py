@@ -142,17 +142,14 @@ st.markdown("""
 # PAGE CONTENT
 # ------------------------------------------------------------
 
-st.title("🏈 Jordan's Weekly Picks")
-
-st.write("""
-- This is a weekly summary of my NFL moneyline predictions.  
-  No machine learning model is 100% accurate — bet responsibly!
-""")
-
-st.write("""
-- Predictions are updated **Thursdays before TNF**,  
-  covering all weekend games and Monday Night Football.
-""")
+st.markdown("""
+<div style='text-align: center;'>
+    <h1>🏈 Jordan's Weekly Picks</h1>
+    <p>This is a weekly summary of my NFL moneyline predictions.<br>
+    No model is 100% accurate — bet responsibly!</p>
+    <p>Predictions update <b>Thursdays before TNF</b> and cover all weekend games, including Monday Night Football.</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Neon data card example
 st.markdown("""
