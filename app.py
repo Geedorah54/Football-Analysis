@@ -180,5 +180,28 @@ try:
     df.rename(columns={'gameday':'Game Day','home_team': 'Home Team','away_team':'Away Team','win_prob_home':'Home Win Prob','win_prob_away':'Away Win Prob','home_moneyline':'Home Moneyline','away_moneyline':'Away Moneyline','model_winner':'Model Winner'}, inplace=True)
     styled_df = df.style.apply(lambda s: highlight_neon_column(s,"Model Winner"), axis=1)
     st.dataframe(styled_df, use_container_width=True)
+
+    st.markdown("""
+        <div style="text-align:center; margin-top:30px;">
+            <a href="https://www.paypal.com/donate/?business=4FC5W4K8B9FYA&no_recurring=0&item_name=If+you+find+value+in+this+app%2C+and+feel+like+donating+you+can+do+so+here&currency_code=USD" target="_blank">
+                <button style="
+                background-color: transparent;
+                border: 2px solid #00FFFF;
+                color: #00FFFF;
+                font-size: 18px;
+                font-family: 'Orbitron', sans-serif;
+                padding: 10px 30px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            " 
+            onmouseover="this.style.backgroundColor='#00FFFF';this.style.color='#0A0A0F';"
+            onmouseout="this.style.backgroundColor='transparent';this.style.color='#00FFFF';">
+            💰 Donate via PayPal
+            </button>
+            </a>
+        </div>
+""", unsafe_allow_html=True)
+
 except FileNotFoundError:
     st.error("⚠️ weekly_prediction.csv not found. Upload or add it to the project folder.")
