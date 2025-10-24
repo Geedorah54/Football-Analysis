@@ -156,7 +156,7 @@ st.markdown("""
 # Neon data card example
 st.markdown("""
 <div class="neon-card">
-    <div class="neon-title">Previous Weekly</div>
+    <div class="neon-title">Previous Week</div>
     <div class="neon-value">13 / 15 Correct</div>
 </div>
 """, unsafe_allow_html=True)
