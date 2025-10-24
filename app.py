@@ -91,6 +91,11 @@ st.markdown("""
             justify-content: center;
             text-align: center;
         }
+            
+        .neon-card > div {
+            display: block;           
+            width: 100%;
+            }
 
         .neon-card:hover {
             box-shadow: 0 0 35px #00FFFFAA;
