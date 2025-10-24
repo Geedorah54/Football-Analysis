@@ -201,7 +201,30 @@ try:
             </button>
             </a>
         </div>
-""", unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <div style='text-align: center; margin-top: 30px;'>
+            <a href="mailto:yourname@email.com?subject=Football Dashboard Feedback" target="_blank">
+                <button style="
+                    background-color: transparent;
+                    border: 2px solid #00FFFF;
+                    color: #00FFFF;
+                    font-size: 18px;
+                    font-family: 'Orbitron', sans-serif;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                " 
+                onmouseover="this.style.backgroundColor='#00FFFF';this.style.color='#0A0A0F';"
+                onmouseout="this.style.backgroundColor='transparent';this.style.color='#00FFFF';">
+                💬 Send Feedback
+                </button>
+            </a>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 except FileNotFoundError:
     st.error("⚠️ weekly_prediction.csv not found. Upload or add it to the project folder.")
