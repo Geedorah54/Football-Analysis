@@ -68,7 +68,7 @@ st.write("""
 """)
 
 # Load the data
-df = pd.read_csv("football/weekly_prediction.csv")
+df = pd.read_csv("weekly_prediction.csv")
 
 st.dataframe(df, use_container_width=True)
 
