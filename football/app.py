@@ -13,10 +13,5 @@ Data updates occur on Thursdays.
 # Load the data
 df = pd.read_csv("football/weekly_prediction.csv")
 
-'''
-# Optional: sort or filter
-df = df.sort_values(by="Confidence", ascending=False)
-'''
-
 st.dataframe(df, use_container_width=True)
 
