@@ -145,8 +145,8 @@ st.markdown("""
 st.markdown("""
 <div style='text-align: center;'>
     <h1>🏈 Jordan's Weekly Picks</h1>
-    <p>- This is a weekly summary of my NFL moneyline predictions.<br>
-    - No model is 100% accurate</p>
+    <p>- This is a weekly summary of my NFL moneyline predictions.<p>
+    <p>- No model is 100% accurate</p>
     <p>- Predictions update <b>Thursdays before TNF</b> and cover all weekend games, including Monday Night Football.</p>
 </div>
 """, unsafe_allow_html=True)
