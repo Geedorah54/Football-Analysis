@@ -183,7 +183,7 @@ try:
 
     st.markdown("""
         <div style='text-align: center; margin-top: 30px;'>
-        <a href="mailto:yourname@email.com?subject=Football Dashboard Feedback" target="_blank">
+        <a href="mailto:jbormann54@gmail.com?subject=Football Dashboard Feedback" target="_blank">
             <button style="
                 background-color: transparent;
                 border: 2px solid #00FFFF;
