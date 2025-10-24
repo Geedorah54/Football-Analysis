@@ -176,8 +176,8 @@ try:
             for col in s.index
     ]
 
-    df.rename(columns={'gameday':'Game Day','home_team': 'Home Team','away_team':'Away Team','win_prob_home':'Home Win Prob','win_prob_away':'Away Win Prob','home_moneyline':'Home Moneyline','away_moneyline':'Away Moneyline','model_winner':'Model Winnner'}, inplace=True)
-    styled_df = df.style.apply(lambda s: highlight_neon_column(s,"Model Winner"))
+    df.rename(columns={'gameday':'Game Day','home_team': 'Home Team','away_team':'Away Team','win_prob_home':'Home Win Prob','win_prob_away':'Away Win Prob','home_moneyline':'Home Moneyline','away_moneyline':'Away Moneyline','model_winner':'Model Winner'}, inplace=True)
+    styled_df = df.style.apply(lambda s: highlight_neon_column(s,"Model Winner"), axis=1)
     st.dataframe(styled_df, use_container_width=True)
 except FileNotFoundError:
     st.error("⚠️ weekly_prediction.csv not found. Upload or add it to the project folder.")
