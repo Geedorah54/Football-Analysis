@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-# --- Neon CSS Styling ---
+st.set_page_config(page_title="Football Moneyline Predictions", layout="wide")
+
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
@@ -54,8 +55,6 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
-st.set_page_config(page_title="Football Moneyline Predictions", layout="wide")
 
 st.title("🏈 Jordan's Weekly Picks")
 
