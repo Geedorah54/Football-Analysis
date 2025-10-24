@@ -85,17 +85,12 @@ st.markdown("""
             margin: 20px 0px;
             box-shadow: 0 0 20px #00FFFF55;
             transition: 0.3s ease-in-out;
-            display: flex;
-            flex_direction: column;
-            align-items: center;
-            justify-content: center;
             text-align: center;
+            display: flex;
+            flex-direction: column;  
+            align-items: center;         
+            justify-content: center;     
         }
-            
-        .neon-card > div {
-            display: block;           
-            width: 100%;
-            }
 
         .neon-card:hover {
             box-shadow: 0 0 35px #00FFFFAA;
