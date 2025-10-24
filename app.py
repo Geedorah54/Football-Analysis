@@ -138,9 +138,8 @@ st.write("""
 # Neon data card example
 st.markdown("""
 <div class="neon-card">
-    <div class="neon-title">Weekly Summary</div>
+    <div class="neon-title">Previous Weekly Summary</div>
     <div class="neon-value">13 / 15 Correct</div>
-    <div class="neon-subtext">Last week’s results</div>
 </div>
 """, unsafe_allow_html=True)
 
