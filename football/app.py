@@ -3,11 +3,10 @@ import pandas as pd
 
 st.set_page_config(page_title="Football Moneyline Predictions", layout="wide")
 
-st.title("🏈 Weekly Football Moneyline Predictions")
+st.title("🏈 Jordan's Weekly Picks")
 
 st.write("""
-Welcome! These are my weekly model predictions for the football moneylines.
-Data updates occur on Thursdays.
+This is a weekly summary of my NFL moneyline predictions.  No machine learning model is %100 - bet at your own risk!
 """)
 
 # Load the data
