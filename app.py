@@ -162,6 +162,8 @@ st.markdown("""
 # ------------------------------------------------------------
 try:
     df = pd.read_csv("weekly_prediction.csv")
+    df = df.loc[:, ~df.columns.str.contains('Unnamed: 0')]
+    df = df.reset_index(drop=True)
     st.dataframe(df, use_container_width=True)
 except FileNotFoundError:
     st.error("⚠️ weekly_prediction.csv not found. Upload or add it to the project folder.")
