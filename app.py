@@ -41,6 +41,11 @@ st.markdown("""
             color: #00FFFF !important;
             text-shadow: 0 0 15px #00FFFF;
             animation: glow 2s ease-in-out infinite alternate;
+            text-align: center !important;
+            width 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @keyframes glow {
