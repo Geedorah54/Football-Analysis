@@ -168,7 +168,16 @@ try:
     df = pd.read_csv("weekly_prediction.csv")
     df = df.loc[:, ~df.columns.str.contains('Unnamed: 0')]
     df = df.reset_index(drop=True)
+
+    def highlight_neon_column(s, column_name):
+        """Apply neon glow style to a specific column."""
+        return [
+            "color: #00FFFF; text-shadow: 0 0 8px #00FFFF;" if col == column_name else ""
+            for col in s.index
+    ]
+
     df.rename(columns={'gameday':'Game Day','home_team': 'Home Team','away_team':'Away Team','win_prob_home':'Home Win Prob','win_prob_away':'Away Win Prob','home_moneyline':'Home Moneyline','away_moneyline':'Away Moneyline','model_winner':'Model Winnner'}, inplace=True)
-    st.dataframe(df, use_container_width=True)
+    styled_df = df.style.apply(lambda s: highlight_neon_column(s,"Model Winner"))
+    st.dataframe(styled_df, use_container_width=True)
 except FileNotFoundError:
     st.error("⚠️ weekly_prediction.csv not found. Upload or add it to the project folder.")
