@@ -13,19 +13,22 @@ env/
 .venv/
 .venvpy310/
 ENV/
+.env/
 
 # --- Jupyter / VS Code ---
 .ipynb_checkpoints
 .vscode/
 .idea/
 
-# --- OS-specific ---
+# OS / IDE junk
 .DS_Store
-Thumbs.db
+__pycache__/
+*.pyc
+
 
 # --- Streamlit ---
 .streamlit/secrets.toml
-.streamlit/config.toml
+
 
 # --- Build / Logs ---
 build/
