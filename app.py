@@ -21,7 +21,7 @@ st.markdown("""
         html, body, [class^="st-"], [class^="css-"] {
             font-family: 'Orbitron', sans-serif !important;
             color: #FFFFFF !important;
-            background-color: #0A0A0F !important;
+            background-color: linear-gradient(145deg, #0A0A0F 0%, #141421 50%, #1A1A25 100%) !important;
         }
 
         /* Main content area */
