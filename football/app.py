@@ -20,7 +20,3 @@ df = df.sort_values(by="Confidence", ascending=False)
 
 st.dataframe(df, use_container_width=True)
 
-'''
-# Optional chart
-st.bar_chart(df.set_index("Team")["Confidence"])
-'''
