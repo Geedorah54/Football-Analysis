@@ -1,5 +1,6 @@
 import plotly.graph_objects as go
 import streamlit as st
+import pandas as pd
 
 st.title("📊 Team Comparison Analytics")
 st.markdown("<p style='text-align:center;'>Select two teams to compare EPA, touchdowns, and yards over the season.</p>", unsafe_allow_html=True)
