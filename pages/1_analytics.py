@@ -187,7 +187,7 @@ try:
         mode="lines+markers",
         name=team_a,
         line=dict(color="#D16D02", width=3),
-        marker=dict(size=8, color="#00FFFF")
+        marker=dict(size=8, color="#D16D02")
     ))
     fig.add_trace(go.Scatter(
         x=team_b_df["week"], y=team_b_df["epa"],
