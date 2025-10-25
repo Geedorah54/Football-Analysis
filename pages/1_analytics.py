@@ -141,7 +141,7 @@ EPA trends, touchdowns, yards, and more.
 
 # --- Load Data ---
 try:
-    df = pd.read_csv("season_team_stats.csv")  # Replace with your team-level stats CSV
+    df = pd.read_csv("this_season.csv")  # Replace with your team-level stats CSV
 except FileNotFoundError:
     st.error("⚠️ season_team_stats.csv not found. Please add it to the project folder.")
     st.stop()
