@@ -166,7 +166,7 @@ try:
 
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown(f"<h3 style='color:#00FFFF;text-align:center'>{team_a}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3 style='color:#D16D02;text-align:center'>{team_a}</h3>", unsafe_allow_html=True)
         st.metric("Average TDs", int(team_a_df["touchdown"].mean()))
         st.metric("Average Yards", int(team_a_df["yards_gained"].mean()))
         st.metric("Avg EPA", round(team_a_df["epa"].mean(), 3))
@@ -186,7 +186,7 @@ try:
         x=team_a_df["week"], y=team_a_df["epa"],
         mode="lines+markers",
         name=team_a,
-        line=dict(color="#00FFFF", width=3),
+        line=dict(color="#D16D02", width=3),
         marker=dict(size=8, color="#00FFFF")
     ))
     fig.add_trace(go.Scatter(
@@ -212,7 +212,7 @@ try:
     fig2.add_trace(go.Scatter(
         x=team_a_df["week"], y=team_a_df["touchdown"],
         mode="lines+markers", name=f"{team_a} TDs",
-        line=dict(color="#00FFFF", dash="dot")
+        line=dict(color="#D16D02", dash="dot")
     ))
     fig2.add_trace(go.Scatter(
         x=team_b_df["week"], y=team_b_df["touchdown"],
@@ -222,7 +222,7 @@ try:
     fig2.add_trace(go.Scatter(
         x=team_a_df["week"], y=team_a_df["yards_gained"],
         mode="lines+markers", name=f"{team_a} Yards",
-        line=dict(color="#00FFFF")
+        line=dict(color="#D16D02")
     ))
     fig2.add_trace(go.Scatter(
         x=team_b_df["week"], y=team_b_df["yards_gained"],
