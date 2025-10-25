@@ -150,6 +150,7 @@ st.markdown("""
     <p>- This is a weekly summary of my NFL moneyline predictions<p>
     <p>- No model is 100% accurate</p>
     <p>- Predictions update <b>Thursdays before TNF</b> and cover all weekend games, including Monday Night Football</p>
+    <p>- Use the analytics page to compare team stats</p>        
 </div>
 """, unsafe_allow_html=True)
 
