@@ -39,6 +39,15 @@ summary = df2.groupby("team").agg({
 # Merge the scoring data
 summary = summary.merge(team_scoring, on="team", how="left")
 
+logos = pd.read_csv('logos.csv')
+
+
+summary = summary.merge(logos, on='team', how='left')
+
+summary["logo"] = summary["logo"].fillna("https://upload.wikimedia.org/wikipedia/commons/e/e0/Question_mark_black.png")
+
+
+
 afc = {"BAL","BUF","CIN","CLE","DEN","HOU","IND","JAX","KC","LAC","LV","MIA","NE","NYJ","PIT","TEN"}
 summary["conference"] = summary["team"].apply(lambda t: "AFC" if t in afc else "NFC")
 
