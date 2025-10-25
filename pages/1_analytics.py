@@ -39,7 +39,6 @@ st.markdown("""
         }
             
         h3, [data-testid="stMarkdownContainer"] h3 {
-            text-shadow: 0 0 15px #00FFFF;
             text-align: center !important;
             width 100%;
             display: block;
