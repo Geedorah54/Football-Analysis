@@ -174,6 +174,6 @@ st.plotly_chart(fig, use_container_width=True)
 
 # --- Display Summary Stats ---
 col1, col2, col3 = st.columns(3)
-col1.metric("Total Touchdowns", int(team_df['touchdowns'].sum()))
+col1.metric("Total Touchdowns", int(team_df['touchdown'].sum()))
 col2.metric("Total Yards", int(team_df['yards'].sum()))
 col3.metric("Avg. EPA per Game", round(team_df['epa'].mean(), 2))
