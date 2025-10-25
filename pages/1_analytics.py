@@ -178,35 +178,3 @@ col1.metric("Average Touchdowns", int(team_df['touchdown'].mean()))
 col2.metric("Average Yards", int(team_df['yards_gained'].mean()))
 col3.metric("Avg. EPA per Game", round(team_df['epa'].mean(), 2))
 
-
-# --- Team Selection ---
-teams = sorted(df['team'].unique())
-selected_team = st.selectbox("Select a Team", teams)
-
-# --- Filter for Selected Team ---
-team_df = df[df['team'] == selected_team]
-
-# --- Plot EPA Trend ---
-fig = go.Figure()
-fig.add_trace(go.Scatter(
-    x=team_df['week'],
-    y=team_df['epa'],
-    mode='lines+markers',
-    line=dict(color='#00FFFF', width=3),
-    marker=dict(size=8, color='#00FFFF'),
-    fill='tozeroy',
-    fillcolor='rgba(0,255,255,0.1)',
-))
-fig.update_layout(
-    title=f"{selected_team} — Expected Points Added (EPA) Trend",
-    paper_bgcolor='#0A0A0F',
-    plot_bgcolor='#0A0A0F',
-    font=dict(color='#FFFFFF', family='Orbitron'),
-)
-st.plotly_chart(fig, use_container_width=True)
-
-# --- Display Summary Stats ---
-col1, col2, col3 = st.columns(3)
-col1.metric("Average Touchdowns", int(team_df['touchdown'].mean()))
-col2.metric("Average Yards", int(team_df['yards_gained'].mean()))
-col3.metric("Avg. EPA per Game", round(team_df['epa'].mean(), 2))
