@@ -205,20 +205,11 @@ try:
     )
     st.plotly_chart(fig, use_container_width=True)
 
-    # ---- Touchdowns & Yards Comparison ----
-    st.subheader("Touchdowns & Yards Trend")
+    # ---- Yards Comparison ----
+    st.subheader("Yards Trend")
 
     fig2 = go.Figure()
-    fig2.add_trace(go.Scatter(
-        x=team_a_df["week"], y=team_a_df["touchdown"],
-        mode="lines+markers", name=f"{team_a} TDs",
-        line=dict(color="#D16D02", dash="dot")
-    ))
-    fig2.add_trace(go.Scatter(
-        x=team_b_df["week"], y=team_b_df["touchdown"],
-        mode="lines+markers", name=f"{team_b} TDs",
-        line=dict(color="#FF00FF", dash="dot")
-    ))
+
     fig2.add_trace(go.Scatter(
         x=team_a_df["week"], y=team_a_df["yards_gained"],
         mode="lines+markers", name=f"{team_a} Yards",
@@ -227,6 +218,29 @@ try:
     fig2.add_trace(go.Scatter(
         x=team_b_df["week"], y=team_b_df["yards_gained"],
         mode="lines+markers", name=f"{team_b} Yards",
+        line=dict(color="#FF00FF")
+    ))
+    fig2.update_layout(
+        paper_bgcolor="#0A0A0F",
+        plot_bgcolor="#0A0A0F",
+        font=dict(color="#FFFFFF", family="Orbitron"),
+        hovermode="x unified"
+    )
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # ---- Touchdowns Comparison ----
+    st.subheader("Touchdown Trend")
+
+    fig2 = go.Figure()
+
+    fig2.add_trace(go.Scatter(
+        x=team_a_df["week"], y=team_a_df["touchdown"],
+        mode="lines+markers", name=f"{team_a} Touchdowns",
+        line=dict(color="#D16D02")
+    ))
+    fig2.add_trace(go.Scatter(
+        x=team_b_df["week"], y=team_b_df["touchdown"],
+        mode="lines+markers", name=f"{team_b} Touchdowns",
         line=dict(color="#FF00FF")
     ))
     fig2.update_layout(
