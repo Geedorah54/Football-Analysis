@@ -8,7 +8,7 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
         /* ===== GLOBAL STYLING ===== */
-        html, body, [class^="st-"], [class^="css-"] {
+        html, body, [class^="st-"], [class^="css-"]:not(.material-icons) {
             font-family: 'Orbitron', sans-serif !important;
             color: #FFFFFF !important;
             background-color: linear-gradient(145deg, #0A0A0F 0%, #141421 50%, #1A1A25 100%) !important;
